@@ -2,7 +2,7 @@
 
 :root {
   --background: hsl(275, 100%, 97%);
-  --card: hsl(240, 100%, 99%);
+  --card: hsl(0, 0%, 100%);
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 700;
