@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const accordionItems = document.querySelectorAll(".accordion-item");
 
   accordionItems.forEach((item) => {
-    const accordionHeader = item.querySelector(".accordion__title");
-    const accordionBody = item.querySelector(".accordion__content");
+    const accordionHeader = item.querySelector(".accordion-item__title");
+    const accordionBody = item.querySelector(".accordion-item__content");
     const accordionIcon = accordionHeader.children[0];
 
     accordionHeader.addEventListener("click", (e) => {
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function closeAllAccordionItems(items) {
   items.forEach((item) => {
-    const accordionHeader = item.querySelector(".accordion__title");
-    const accordionBody = item.querySelector(".accordion__content");
+    const accordionHeader = item.querySelector(".accordion-item__title");
+    const accordionBody = item.querySelector(".accordion-item__content");
     const accordionIcon = accordionHeader.children[0];
     accordionBody.classList.remove("show");
     accordionIcon.src = "assets/images/icon-plus.svg";

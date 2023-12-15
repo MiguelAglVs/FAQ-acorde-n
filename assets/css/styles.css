@@ -21,6 +21,10 @@
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -65,14 +69,14 @@
   z-index: 1;
 }
 
-.card-header {
+.card__header {
   display: flex;
   gap: 20px;
   align-items: center;
   padding: 0 0 20px 0;
 }
 
-.card-title {
+.card__title {
   font-size: 3rem;
   font-weight: var(--font-bold);
 }
@@ -82,7 +86,7 @@
   padding-bottom: 0px;
 }
 
-.accordion__title {
+.accordion-item__title {
   font-size: 1rem;
   font-weight: var(--font-bold);
   cursor: pointer;
@@ -92,11 +96,11 @@
   align-items: center;
 }
 
-.accordion__title:hover {
+.accordion-item__title:hover {
   color: #ad28eb;
 }
 
-.accordion__content {
+.accordion-item__content {
   font-size: 16px;
   font-weight: var(--font-regular);
   color: hsl(292, 16%, 49%);
@@ -129,7 +133,7 @@
   }
 
 
-  .card-icon img {
+  .card__icon img {
     width: 30px;
     height: 30px;
     padding-top: 5px;
